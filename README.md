@@ -5,7 +5,7 @@ progression of data preparation tasks that come *before* the model itself: text 
 tokenization with Byte Pair Encoding (BPE), and building input–target pairs plus a PyTorch `DataLoader`
 for autoregressive training.
 
-Everything here is implemented in Jupyter notebooks and runs against Edgar Allan Poe's short story
+Everything here is implemented in Jupyter notebooks and runs against Edith Wharton's short story
 [`the-verdict.txt`](the-verdict.txt) as the sample corpus.
 
 ## Repository contents
@@ -15,7 +15,7 @@ Everything here is implemented in Jupyter notebooks and runs against Edgar Allan
 | [`1_LLM_Tokenizer.ipynb`](1_LLM_Tokenizer.ipynb) | Data preparation and sampling. Reads `the-verdict.txt`, explores regex-based splitting, builds a vocabulary, maps tokens to ids, and implements a `SimpleTokenizerV1` class with `encode`/`decode`. |
 | [`2_Byte_Pair_Encoding.ipynb`](2_Byte_Pair_Encoding.ipynb) | Subword tokenization with BPE using `tiktoken` (`gpt2` encoding), including encode/decode round-trips. |
 | [`3_Creating_InpuTarget_Pairs.ipynb`](3_Creating_InpuTarget_Pairs.ipynb) | Creates input–target pairs with a sliding window and implements a `GPTDatasetV1` (`torch.utils.data.Dataset`) wrapped in a `DataLoader`. |
-| [`the-verdict.txt`](the-verdict.txt) | Sample training text (Edgar Allan Poe, "The Verdict"), ~20,479 characters. |
+| [`the-verdict.txt`](the-verdict.txt) | Sample training text (Edith Wharton, "The Verdict", from *The Hermit and the Wild Woman, and Other Stories*), ~20,479 characters. |
 | `.gitignore` | Ignores local virtual environment directories (`myvenv/`, `venv/`). |
 
 ## What each notebook covers
