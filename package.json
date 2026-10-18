@@ -1,0 +1,7 @@
+{
+  "name": "building-llm-from-scratch",
+  "private": true,
+  "scripts": {
+    "test": "bash tests/test_readme.sh"
+  }
+}
